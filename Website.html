@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		*
+		{
+			margin: 0px;
+			background-color: lightgoldenrodyellow;
+			/*padding-top: 10px;
+			padding-bottom: 10px;*/
+		}
+
+		section
+		{
+			margin: 10px;
+			padding: 10px;
+		}
+		#Logo
+		{
+			height: 50px;
+			border-radius: 150px;
+			border: 2px solid blue;
+		}
+		header
+		{
+			    margin: 0px;
+			    padding: 10px;
+			    background-color: lightgoldenrodyellow;
+			    height: 60px;
+			    display: flex;
+			    align-items: center;
+			    justify-content: space-between;
+			    align-content: center;
+			    flex-wrap: wrap;
+			    flex-direction: row;
+			}
+
+			header > a
+			{
+				background-color: yellow;
+				color: blue;
+				text-decoration: none;
+				padding: 10px;
+				border-radius: 10px;
+				border: 2px solid blue;
+			}
+
+			header > a:hover
+			{
+				background-color: blue;
+				color: yellow;
+				border: 2px solid black;
+			}
+
+			.Home
+			{
+				background-color: sandybrown;
+				font-size: 40px;
+				font-family: Algerian;
+				padding: 5px;
+				margin-top: 10px;
+				color:yellow;
+				-webkit-text-stroke: 0.01px darkblue;
+
+			}
+
+			.tagline
+			{
+				 font-size: 1.5rem; /* Adjust font size */
+				 font-weight: bold;
+				 color: #ff5722; /* Stylish vibrant color */
+				 text-transform: uppercase;
+				 text-align: center;
+				 padding: 1vw 1vw;
+				 border: 2px solid #ff5722;
+				 border-radius: 10px;
+				 background: #ffffff;
+				 box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+				 animation: pulse 2s infinite;
+          }
+          
+          @keyframes pulse {
+            0% {
+              transform: scale(1);
+              box-shadow: 0 4px 15px rgba(255, 87, 34, 0.5);
+            }
+            50% {
+              transform: scale(1.005);
+              box-shadow: 0 6px 20px rgba(255, 87, 34, 0.8);
+            }
+            100% {
+              transform: scale(1);
+              box-shadow: 0 4px 15px rgba(255, 87, 34, 0.5);
+            }
+          }
+          
+
+          h1
+          {
+          	font-family: cambria;
+          	color: yellow;
+          	-webkit-text-stroke: 1px darkblue	;
+          	text-shadow: 2px 2px blue;
+          }
+
+          #About
+          {
+          	display: flex;
+          	align-items: center;
+          	justify-content: space-between;
+          }
+
+          .About
+          {
+          	font-size: 24px;
+          	width: 75%;
+          	height: 20%;
+          	background-color: yellow;
+          }
+
+             @keyframes glow {
+        0% {
+        box-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700;
+        }
+        50% {
+        box-shadow: 0 0 20px #FFD700, 0 0 40px #FFD700, 0 0 60px #FFD700;
+        }
+        100% {
+        box-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700;
+        }
+    }
+
+          .AL
+          {
+          	margin-left: 50px;
+          	align-content: center;
+          	height: 45vh;
+          	width: 15vw;
+          	border-radius: 10%;
+          	animation: glow 3s infinite;
+          	padding: 0px;
+          }
+
+          h2
+          {
+          	height: 40px;
+          	padding-top: 20px;
+          	padding-bottom: 20px;	
+          }
+
+
+          .CoursesOffered
+          {
+          	font-size: 24px;
+          	display: flex;
+          	flex-wrap: wrap;
+          	align-content: center;
+          	justify-content: space-between;
+          }
+          
+          .About> P
+          {
+          	padding: 	10px;
+          }
+
+
+
+          .ABC
+          {
+          	font-size: 24px;
+          	width: 25%;
+          	height: 20%;
+          	float: 	left;
+          	
+          	color: white;
+          	margin: 0px;
+          	padding-top: 4px;
+          	padding-bottom: 10px;
+          }
+
+          .CC
+          {
+          	width: 31%;
+          	background-color: skyblue;
+          	padding: 7px;
+          	border-radius: 20px;
+          	border-color: blueviolet;
+          	border-width: 2px;
+          	border-style: solid;
+          }
+
+          .CC:hover
+          {
+          	
+          	animation: coursecard;
+          }
+          @keyframes coursecard{
+          	{transform: scale(1.0);         }
+          	{transform: scale(1.5);}
+
+          }
+
+
+          .CC>h4
+          {
+          	font-style: italic;
+          	text-decoration: underline;
+          }
+
+          .CC > *
+          {
+          	background-color: skyblue;
+          }
+
+          ul>*{
+          	background-color: skyblue;
+          }
+/*
+          .CC:hover
+          {
+          	height: 10px;
+          	width: 10px;
+          }*/
+
+          .EndLine
+          {
+          	background-color: blue;
+          	margin: 0px;
+          	font-family: cambria;
+          	text-align: center;
+          	color: yellow;
+          }
+
+          .EndLine > *
+          {
+          	padding: 0px;
+          	margin: 0px;
+          }
+
+          .EndLine > h2
+          {
+          	background-color: blue;
+          	font-size: 48px;
+          	text-shadow: 2px 2px red;
+          }
+
+          .EndLine > p 
+          {
+          	background-color: blue;
+          	margin: 20px;
+          }
+
+          	</style>
+
+          	<title>CSC Pammal</title>
+
+</head>
+<body>
+	<header>
+		<img src="logo.jpg" id="Logo">
+
+		<h1>CSC Computer Education [Pammal]</h1>
+
+			<!-- <a href="#Home">Home</a> -->
+			<a href="#AboutUs">About Us</a>
+			<a href="#CoursesOffered">Courses Offered</a>
+			<a href="#ContactUs">Contact Us</a>
+			<a href="#JoinNow">Join Now</a>
+			
+	</header>
+
+	<section>
+		<div class="tagline">
+            Boon for Middle Class 
+        </div>
+
+	</section>
+
+
+	<section>
+		<H2 id="AboutUs">About Us</H2>
+		<div id="About">
+		<div class="ABC">
+			<img class="AL" src="Founder.jpg">
+		</div>
+		<div class="About">
+				<p>About the Founder</p>
+
+				<p>Our founder, Mr. T. Iyamperumal M.E, envisioned creating a platform to bridge education and technology, focusing on innovation, excellence, and accessibility for all learners especially to reach middle class who cannot afford more money to spend for learning latest technologies.</p>
+
+				<p>Over the years, CSC Computer Education has grown exponentially, boasting a network of **400+ branches** across the globe. Our training centers are equipped with state-of-the-art infrastructure and the latest technologies, fostering an environment conducive to interactive learning. From school-going children to corporate professionals, CSC caters to diverse learners through a rich array of courses.</p>
+			</div>
+		</div>
+		</section>
+		
+		 <section>
+			
+			<H2 id="CoursesOffered">Courses Offered</H2>
+			
+			<div class="CoursesOffered">
+				<div class="CC">
+					<h4 style="font-style: italic;">Diploma Courses</h4>
+						<p>Our Diploma Courses are designed to provide in-depth knowledge and practical skills that align with current industry demands. Each program is bundled with specialized modules suited to equip you with the expertise needed to excel in specific job roles.</p>
+					
+					<ul>
+						<li>HDCA</li>
+						<li>DCA</li>
+						<li>ADJP</li>
+						<li>MDSA</li>
+					</ul>
+				</div>
+
+				<div class="CC">
+					<h4>Certification Courses</h4>
+					<ul>
+						<li>Professional certifications to boost your career in technology.</li>
+						<li>HTML, CSS & JavaScript Basics</li>
+						<li>Front-End Frameworks (React, Angular)</li>
+						<li>Back-End Development with Node.js</li>
+						<li>Database Management (MySQL, MongoDB)</li>
+						<li>Progrmming Languages</li>
+						<li>Tally Prime 5.0</li>
+					</ul>
+				</div>
+				<div class="CC">
+					<h4>Kids Courses</h4>
+						<p>Courses like Abacus, Robotics, and more to ignite your minds....!
+						</p>
+					
+				</div>
+	</div>
+</section>
+
+<section>
+		<H2 id="ContactUs">Contact Us</H2>
+		<big><big>📞</big></big> <ins>Ph: 9710636363</ins><br><br>
+		📍 Address 
+		No: 2&3 Parthasarathy Street
+		muthmizh Nagar
+		Pammal
+		chennai - 600 075<br><br><br>
+		<a  href="https://maps.app.goo.gl/2hAiyDCmYe5rMe9U7" ><b>Visit us!..</b></a>
+		</section>
+
+		<section>
+		<H2 id="JoinNow">Join Now</H2>
+		<form>
+			<label>Name:</label>
+			<input type="Text">
+			<label>Course</label>
+			<input type="Text">
+			<label>Phone Number</label>
+			<input type="Text">
+			<button name="Submit">Submit</button><br><br>
+		</form>
+		</section>
+		<section class = "EndLine">
+			<h2>CSC Pammal</h2>
+			<p>"© 2025 CSC Computer Education. All rights reserved."</p>
+		</section>
+	</section>
+</body>
+</html>
